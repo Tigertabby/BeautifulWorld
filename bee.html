@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bee.css" />
+    <title></title>
+  </head>
+  <body>
+  <div class="bee1"></div>
+
+    <div class="wrapper">
+      <div class="menu">
+        <div class="follow">
+          Follow The Bees
+        </div>
+        <div class="line"></div>
+        <div class="nav-menu">
+          <a onclick="playSound()" href="#" class="menu-link">🐝 Listen</a>
+          <a onclick="work()" href="#" class="menu-link">🍯 🍯 Bees at work</a>
+          <a onclick="fly()" href="#" class="menu-link">🐝 Flying Bee</a>
+          <a href="https://www.youtube.com/watch?v=gQseXe0-N5Y" target="_blank" class="menu-link">Bee song from 1975 (link to youtube). 🍯</a>
+          <a href="slideshow.html" class="menu-link">Back to slideshow.</a>
+        </div>
+      </div>
+    </div>
+   <div class="bee2"></div>
+  <script>
+    function fly(){
+    const unten = document.querySelector(".bee2");
+    unten.style.backgroundImage = "url('https://media3.giphy.com/media/odtdjZgbgDqMg/giphy.webp?cid=ecf05e47vb5ojlw3lj151i36aonivkgpn9qfz3ps6fj7hgou&rid=giphy.webp&ct=g')";
+    unten.style.backgroundRepeat = "no-repeat";
+    unten.style.backgroundSize = "388px";
+    };
+    function work(){
+    const unten = document.querySelector(".bee2");
+    unten.style.backgroundImage = "url('https://media2.giphy.com/media/fnVBUbXHdgaXJBE9cz/200.webp?cid=ecf05e472vlifxhl5c3srb72pi50wfex23uk3hy4z38ti0nd&rid=200.webp&ct=g')";
+    unten.style.backgroundRepeat = "no-repeat";
+    unten.style.backgroundSize = "388px";
+    };
+    function playSound(){
+    var audio = new Audio('soundbee.mp3');
+    audio.play();
+}
+
+  </script>
+  </body>
+</html>
