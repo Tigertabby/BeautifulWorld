@@ -49,7 +49,7 @@ const playPause = () => {
     interval = setInterval(() => {
       current++;
       changeSlides();
-    }, 1500);
+    }, 2000);
     playPauseBool = false;
   } else {
     clearInterval(interval);
